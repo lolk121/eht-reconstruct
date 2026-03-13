@@ -24,7 +24,7 @@ The EHT captured the first images of black holes (M87\* and Sgr A\*) by combinin
 - [ ] Generate dirty image (naive inverse FFT, heavily artefacted but proves the pipeline works)
 - [ ] Compute and visualise the dirty beam (point spread function)
 
-**Phase 3 - CLEAN reconstruction (Week 3-5)**
+**Phase 3 - CLEAN reconstruction**
 - [ ] Implement Hogbom CLEAN 
 - [ ] Fit clean beam (Gaussian to PSF main lobe)
 - [ ] Generate restored image, first real reconstruction of M87\*
