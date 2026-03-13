@@ -48,8 +48,9 @@ The EHT captured the first images of black holes (M87\* and Sgr A\*) by combinin
 
 ### Data Sources
 
-- **M87\* (2017):** https://doi.org/10.25739/gyg1-8a69
-- **Sgr A\* (2017):** https://doi.org/10.25739/ank3-5064
+- **M87* 2017 (calibrated visibilities):** https://github.com/eventhorizontelescope/2019-D01-01
+- **M87* 2018 (calibrated visibilities):** https://github.com/eventhorizontelescope/2024-D01-01
+- **EHT imaging pipelines (reference):** https://github.com/eventhorizontelescope/2019-D01-02
 
 Download UVFITS files and place in `data/`.
 
