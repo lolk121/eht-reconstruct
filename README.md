@@ -15,20 +15,20 @@ The EHT captured the first images of black holes (M87\* and Sgr A\*) by combinin
 ### Milestones
 
 **Phase 1 - Data ingestion & exploration***
-- [ ] Parse EHT UVFITS files using astropy (extract visibilities, uv-coordinates, noise estimates)
-- [ ] Plot uv-coverage to understand which Fourier components are sampled
-- [ ] Sanity check: visibility amplitudes and phases look reasonable
+- [done] Parse EHT UVFITS files using astropy (extract visibilities, uv-coordinates, noise estimates)
+- [done] Plot uv-coverage to understand which Fourier components are sampled
+- [done] Sanity check: visibility amplitudes and phases look reasonable
 
 **Phase 2 - Dirty image baseline**
-- [ ] Implement inverse NUFFT (irregularly sampled Fourier data -> image) using finufft
-- [ ] Generate dirty image (naive inverse FFT, heavily artefacted but proves the pipeline works)
-- [ ] Compute and visualise the dirty beam (point spread function)
+- [done] Implement inverse NUFFT (irregularly sampled Fourier data -> image) using finufft
+- [done] Generate dirty image (naive inverse FFT, heavily artefacted but proves the pipeline works)
+- [done] Compute and visualise the dirty beam (point spread function)
 
 **Phase 3 - CLEAN reconstruction**
-- [ ] Implement Hogbom CLEAN 
-- [ ] Fit clean beam (Gaussian to PSF main lobe)
-- [ ] Generate restored image, first real reconstruction of M87\*
-- [ ] Convergence diagnostics (residual vs iteration)
+- [done] Implement Hogbom CLEAN 
+- [done] Fit clean beam (Gaussian to PSF main lobe)
+- [done] Generate restored image, first real reconstruction of M87\*
+- [done] Convergence diagnostics (residual vs iteration)
 
 **Phase 4 - Advanced methods*** 
 - [ ] Maximum Entropy Method (smoothest image consistent with data)
