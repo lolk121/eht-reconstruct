@@ -165,6 +165,12 @@ def load_uvfits(path: str | Path) -> Observation:
         with np.errstate(divide="ignore", invalid="ignore"):
             sigma = np.where(weights > 0, 1.0 / np.sqrt(weights), np.inf)
 
+        # Clip sigma to prevent miscalibrated high-weight visibilities
+        # from dominating chi-squared
+        sigma_median = np.median(sigma[sigma < np.inf])
+        sigma_floor = sigma_median * 0.1
+        sigma = np.maximum(sigma, sigma_floor)
+
         # --- Extract antenna/station names ---
         stations = _extract_stations(hdul)
 
